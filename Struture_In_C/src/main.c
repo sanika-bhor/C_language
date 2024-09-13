@@ -1,7 +1,28 @@
 #include <stdio.h>
+#include "./point.c"
+
 int main()
 {
     printf("hello world");
+
+
+    struct point startingPoint={25,65};
+    struct point endingPoint={78,96};
+
+    int startingPointX = getX(startingPoint);
+    int startingPointY = getY(startingPoint);
+
+    int endingPointX = getY(endingPoint);
+    int endingPointY = getY(endingPoint);
+
+    printf("\n\n\n\n X of startingPoint: %d", startingPointX);
+    printf("\n y of startingPoint: %d",startingPointY);
+
+    printf("\n\n\n X of endingPoint: %d", endingPointX);
+    printf("\n y of endingPoint: %d", endingPointY);
+
+    printf("\n\n\n Thank You");
+
     return 0;
 }
 // ------------------------------------------------------------------------------------------
