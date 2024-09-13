@@ -8,7 +8,7 @@ To get started with the "Procedure Oriented Programming" project, follow these s
 
 1. Clone the repository:
    ```bash
-https://github.com/sanika-bhor/C_language.git
+    https://github.com/sanika-bhor/C_language.git
    ```
    
 2. Navigate to the project directory:
