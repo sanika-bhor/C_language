@@ -32,7 +32,7 @@ int main()
     int startingPointX = l1.p1.getX();
     int startingPointY = l1.p1.getY();
     
-    printf("\n\n\n\n*******************LINE**********************");
+    printf("\n\n\n\n***********************LINE****************************");
     printf("\n\n X of startingPoint: %d", startingPointX);
     printf("\n y of startingPoint: %d", startingPointY);
 
@@ -49,7 +49,7 @@ int main()
     int centerPointX = c1.center.getX();
     int centerPointY = c1.center.getY();
 
-    printf("\n\n\n\n*CIRCLE*");
+    printf("\n\n\n\n**********************CIRCLE****************************");
     printf("\n\n X of centerPoint: %d", centerPointX);
     printf("\n y of centerPoint: %d", centerPointY);
     printf("\n\n radius: %d", c1.radius);
@@ -58,19 +58,20 @@ int main()
 // --------------------------------------------------------------------------------------------
 
 struct student s1;
-printf("/n Enter student roll number: ");
-scanf("%d", &s1.rollNumber);
+printf("\n\n\n\n*******************Student details**********************");
+printf("\n\n Enter student roll number: ");
+scanf("%d", &s1.roll_no);
 
-printf("/n Enter student name: ");
+printf("\n Enter student name: ");
 scanf("%s", s1.name);
 
-printf("/n Enter student marks: ");
-scanf("%d", &s1.marks);
+printf("\n Enter student marks: ");
+scanf("%f", &s1.marks);
 
 
-printf("Roll Number: %d",s1.roll_no);
-printf("Name: %s",s1.name);
-printf("Marks: %d",s1.marks);
+printf("\n\n Roll Number: %d",s1.roll_no);
+printf("\n Name: %s",s1.name);
+printf("\n Marks: %.2f",s1.marks);
 
 
     return 0;
@@ -81,6 +82,7 @@ printf("Marks: %d",s1.marks);
 //                              Commands to execute our C language application
 // ------------------------------------------------------------------------------------------
 // g++ -Iinclude -c ./src/circle.c -o ./build/circle.o
+// g++ -Iinclude -c ./src/student.c -o ./build/student.o
 // g++ -Iinclude -c ./src/line.c -o ./build/line.o
 // g++ -Iinclude -c ./src/point.c -o ./build/point.o
 // g++ -Iinclude -c ./src/main.c -o ./build/main.o
