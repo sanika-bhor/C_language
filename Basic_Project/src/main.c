@@ -1,7 +1,8 @@
 // header file
 #include<stdio.h>
-
+#include <math.h>
 #include "handler.h"
+
 // entry point function
 int main()
 {
