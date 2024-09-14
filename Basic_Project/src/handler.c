@@ -6,4 +6,4 @@ void display()
 {
     // function body
     printf("hello world");
-}
+} 

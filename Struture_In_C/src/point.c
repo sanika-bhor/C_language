@@ -1,11 +1,12 @@
 #include "../include/point.h"
-
-int getX(struct point p)
+// int point::getX(struct point p)
+int point::getX()
 {
-    return p.x;
+    return x;
 }
 
-int getY(struct point p)
+// int point::getY(struct point p)
+int point::getY()
 {
-    return p.y;
+    return y;
 }
