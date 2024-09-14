@@ -57,26 +57,12 @@ int main()
 // studnet
 // --------------------------------------------------------------------------------------------
 
-struct student s1;
-printf("\n\n\n\n*******************Student details**********************");
-printf("\n\n Enter student roll number: ");
-scanf("%d", &s1.roll_no);
+    printf("\n\n\n\n*******************Student details**********************");
+    struct student s1;
+    s1.setStudentDetails();
+    s1.getStudentDetails();
 
-printf("\n Enter student name: ");
-scanf("%s", s1.name);
-
-printf("\n Enter student marks: ");
-scanf("%f", &s1.marks);
-
-
-printf("\n\n Roll Number: %d",s1.roll_no);
-printf("\n Name: %s",s1.name);
-printf("\n Marks: %.2f",s1.marks);
-
-
-    return 0;
-
-
+        return 0;
 }
 // ------------------------------------------------------------------------------------------
 //                              Commands to execute our C language application

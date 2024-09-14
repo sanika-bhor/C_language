@@ -61,7 +61,8 @@
     "stdio.h": "c",
     "line.h": "c",
     "point.h": "c",
-    "circle.h": "c"
+    "circle.h": "c",
+    "student.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
