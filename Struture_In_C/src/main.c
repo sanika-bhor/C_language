@@ -2,6 +2,7 @@
 // #include "../include/point.h"
 #include "../include/line.h"
 #include "../include/circle.h"
+#include <student.h>
 
 int main()
 {
@@ -40,8 +41,8 @@ int main()
     printf("\n\n X of endingPoint: %d", endingPointX);
     printf("\n y of endingPoint: %d", endingPointY);
 
-    // circle
-    // --------------------------------------------------------------------------------------------
+// circle
+// --------------------------------------------------------------------------------------------
 
     struct point centerPoint = {85, 225};
     struct circle c1 = {centerPoint, 25};
@@ -53,7 +54,27 @@ int main()
     printf("\n y of centerPoint: %d", centerPointY);
     printf("\n\n radius: %d", c1.radius);
 
+// studnet
+// --------------------------------------------------------------------------------------------
+
+struct student s1;
+printf("/n Enter student roll number: ");
+scanf("%d", &s1.rollNumber);
+
+printf("/n Enter student name: ");
+scanf("%s", s1.name);
+
+printf("/n Enter student marks: ");
+scanf("%d", &s1.marks);
+
+
+printf("Roll Number: %d",s1.roll_no);
+printf("Name: %s",s1.name);
+printf("Marks: %d",s1.marks);
+
+
     return 0;
+
 
 }
 // ------------------------------------------------------------------------------------------
