@@ -40,7 +40,18 @@ int main()
     printf("\n\n X of endingPoint: %d", endingPointX);
     printf("\n y of endingPoint: %d", endingPointY);
 
+    // circle
+    // --------------------------------------------------------------------------------------------
 
+    struct point centerPoint = {85, 225};
+    struct circle c1 = {centerPoint, 25};
+    int centerPointX = c1.center.getX();
+    int centerPointY = c1.center.getY();
+
+    printf("\n\n\n\n*CIRCLE*");
+    printf("\n\n X of centerPoint: %d", centerPointX);
+    printf("\n y of centerPoint: %d", centerPointY);
+    printf("\n\n radius: %d", c1.radius);
 
     return 0;
 
