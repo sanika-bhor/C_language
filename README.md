@@ -2,7 +2,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Installation
+## Installation :-
 
 To get started with the "Procedure Oriented Programming" project, follow these steps:
 
@@ -15,5 +15,6 @@ To get started with the "Procedure Oriented Programming" project, follow these s
    ```bash
    cd C_language
    ```
+3. Open the project in your preferred IDE (e.g., VS Code) and build the project.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
