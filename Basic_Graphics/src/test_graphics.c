@@ -20,4 +20,5 @@ int main()
     return 0;
 }
 
-// g++ -o test_graphics test_graphics.c -lbgi -lgdi32 -lcomdlg32 -luuid -lole32 -loleaut32
+// use when we have to direct build .exe file
+// g++ -o ./build/test_graphics.exe ./src/test_graphics.c -lbgi -lgdi32 -lcomdlg32 -luuid -lole32 -loleaut32
