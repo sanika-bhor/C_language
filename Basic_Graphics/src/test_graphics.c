@@ -22,3 +22,9 @@ int main()
 
 // use when we have to direct build .exe file
 // g++ -o ./build/test_graphics.exe ./src/test_graphics.c -lbgi -lgdi32 -lcomdlg32 -luuid -lole32 -loleaut32
+
+// when we have to create .o files and then create .exe
+// g++ -I include -c ./src/test_graphics.c -o ./build/test_graphics.o
+// g++ ./build/test_graphics.o -o ./build/test_graphics.exe -lbgi -lgdi32 -lcomdlg32 -luuid -lole32 -loleaut32
+// cd build
+// test_graphics.exe
