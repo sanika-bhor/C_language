@@ -12,6 +12,9 @@ int main()
     setcolor(YELLOW);
     line(50, 50, 200, 200);
 
+    setcolor(WHITE);
+    circle(300, 250, 100);
+
     // Pause to view the result
     getch();
 
