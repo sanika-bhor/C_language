@@ -10,7 +10,7 @@ int main()
 
     // Set color and draw a line
     setcolor(YELLOW);
-    line(0, 0, 200, 0);
+    line(50, 50, 200, 200);
 
     // Pause to view the result
     getch();
