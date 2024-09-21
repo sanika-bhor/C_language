@@ -25,10 +25,11 @@ int main()
     setfillstyle(SOLID_FILL, BLACK);
     floodfill(300, 200, BLACK);
 
-    ellipse(200,300,20)
-    setfillstyle(SOLID_FILL, BLACK);
-    floodfill(300, 200, BLACK);
+    // ellipse(200,300,20)
+    // setfillstyle(SOLID_FILL, BLACK);
+    // floodfill(300, 200, BLACK);
 
+    arc(250, 300, 200, 340, 70);
     getch();
     closegraph();
     return 0;
