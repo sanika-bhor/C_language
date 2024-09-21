@@ -9,27 +9,22 @@ int main()
     // Set fill style and color
     setcolor(YELLOW);
 
-    // creating circle and fill it with
-    // yellow color using floodfill.
+    // face shape
     circle(250, 250, 150);
     setfillstyle(SOLID_FILL, YELLOW);
     floodfill(250, 250, YELLOW);
 
+// eye 1
     setcolor(BLACK);
     circle(200, 200, 30);
     setfillstyle(SOLID_FILL, BLACK);
     floodfill(200, 200, BLACK);
-
-   // setcolor(BLACK);
+// eye 2
     circle(300, 200, 30);
     setfillstyle(SOLID_FILL, BLACK);
     floodfill(300, 200, BLACK);
-
-    // ellipse(200,300,20)
-    // setfillstyle(SOLID_FILL, BLACK);
-    // floodfill(300, 200, BLACK);
-
-    arc(250, 300, 200, 340, 70);
+// mouth
+    arc(250, 270, 200, 340, 70);
     getch();
     closegraph();
     return 0;
