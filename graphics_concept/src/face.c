@@ -15,9 +15,19 @@ int main()
     setfillstyle(SOLID_FILL, YELLOW);
     floodfill(250, 250, YELLOW);
 
+    setcolor(BLACK);
+    circle(200, 200, 30);
+    setfillstyle(SOLID_FILL, BLACK);
+    floodfill(200, 200, BLACK);
 
+   // setcolor(BLACK);
+    circle(300, 200, 30);
+    setfillstyle(SOLID_FILL, BLACK);
+    floodfill(300, 200, BLACK);
 
-    
+    ellipse(200,300,20)
+    setfillstyle(SOLID_FILL, BLACK);
+    floodfill(300, 200, BLACK);
 
     getch();
     closegraph();
