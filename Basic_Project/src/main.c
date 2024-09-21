@@ -27,6 +27,6 @@ int main()
 // g++ -Iinclude -c ./src/handler.c -o ./build/handler.o
 // g++ -Iinclude -c ./src/main.c -o ./build/main.o
 // g++ -Iinclude -c ./src/math.c -o ./build/math.o
-// >g++ ./build/main.o ./build/math.o ./build/handler.o -o ./build/output.exe
+// g++ ./build/main.o ./build/math.o ./build/handler.o -o ./build/output.exe
 // cd build
 // output.exe

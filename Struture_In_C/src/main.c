@@ -57,10 +57,10 @@ int main()
 // studnet
 // --------------------------------------------------------------------------------------------
 
-    printf("\n\n\n\n*******************Student details**********************");
-    struct student s1;
-    s1.setStudentDetails();
-    s1.getStudentDetails();
+    // printf("\n\n\n\n*******************Student details**********************");
+    // struct student s1;
+    // s1.setStudentDetails();
+    // s1.getStudentDetails();
 
         return 0;
 }

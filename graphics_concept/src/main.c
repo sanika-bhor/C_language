@@ -14,7 +14,7 @@ int main()
     int i;
     int j;
 
-    for (i = 0; i < 8; i++)
+    for (i = 1; i <= 8; i++)
     {
         line(100, y, 380, y);
         y = y + 40;
@@ -39,4 +39,4 @@ int main()
 // indetail commands for creating ext
 
 // g++ -I include -c ./src/main.c -o ./build/main.o
-// g++  ./build/main.o  -o ./build/output.exe -l bgi -l gdi32 -l comdlg32 -l uuid -l ole32 -l oleaut32g++ -I include -c ./src/main.c -o ./build/main.o
+// g++  ./build/main.o  -o ./build/output.exe -l bgi -l gdi32 -l comdlg32 -l uuid -l ole32 -l oleaut32
