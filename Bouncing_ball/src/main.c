@@ -10,72 +10,59 @@ int main()
     // Set fill style and color
     setcolor(WHITE);
 
-    int i;
-    int x = 60;
-    int y = 300;
-    int minY=60;
-    int maxY=520;
+    int x = 60;     // Starting x position
+    int y = 300;    // Starting y position
+    int minY = 60;  // Minimum y position
+    int maxY = 320; // Maximum y position
+    int minX = 60;  // Minimum x position
+    int maxX = 520; // Maximum x position
 
-    int minX = 60;
-    int maxX = 520;
-
-    for (i = 0; i < 200; i++)
+    // Move the circle in a pattern
+    while (true)
     {
-        cleardevice();
-        circle(x, y, 40);
-
-        if (y == minY)
+        // Move the circle upward until it reaches minY
+        while (y > minY)
         {
-            x=60;
-            for (int j = 0; j < 200; j++)
+            cleardevice();
+            circle(x, y, 40);
+            y -= 20;
+            delay(50);
+        }
+
+        // Move the circle right until it reaches maxX
+        while (x < maxX)
+        {
+            cleardevice();
+            circle(x, y, 40);
+            x += 20;
+            delay(50);
+        }
+
+        // Move the circle down until it reaches maxY
+        while (y < maxY)
+        {
+            cleardevice();
+            circle(x, y, 40);
+            y += 20;
+            delay(50);
+        }
+
+         // Move the circle left until it reaches minX
+            while (x > minX)
             {
                 cleardevice();
                 circle(x, y, 40);
-                x = x + 20;
-                // y = y + 20;
+                x -= 20;
                 delay(50);
-
-                if (x == maxX)
-                {
-                    for (int j = 0; j < 200; j++)
-                    {
-                        cleardevice();
-                        circle(x, y, 40);
-                        // x = 100;
-                        y = y + 20;
-                        delay(50);
-
-                        if (y == maxY)
-                        {
-                            for (int j = 0; j < 200; j++)
-                            {
-                                cleardevice();
-                                circle(x, y, 40);
-                                x = x - 20;
-                                delay(50);
-
-                                if(x==minX)
-                                {
-                                    break;
-                                }
-                            }
-                        }
-                    }
-
-
-                }
             }
 
 
-        }
-
-            y = y - 20;
-        delay(50);
+        // Break out of the loop once the circle completes the pattern
+        if (x == minX && y == maxY)
+            break;
     }
-    // BALL shape
 
     getch();
-
     closegraph();
     return 0;
 }
