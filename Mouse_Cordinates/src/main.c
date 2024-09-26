@@ -25,7 +25,7 @@ int main()
         outtextxy(x, y, "*");
         delay(100);
     }
-
+ 
     // Wait for a key press to exit
     getch();
     closegraph();
