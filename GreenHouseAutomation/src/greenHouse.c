@@ -3,13 +3,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct climateControl *acceptClimateData()
+struct climateControl *applyDateTime(struct climateControl *climateData)
 {
-
     time_t t1;
     time_t currentTime;
     time(&currentTime);
     struct tm *localTime = localtime(&currentTime);
+
+    climateData->date.day = localTime->tm_mday;
+    climateData->date.month = localTime->tm_mon + 1;
+    climateData->date.year = localTime->tm_year + 1900;
+    climateData->time.hour = localTime->tm_hour;
+    climateData->time.minute = localTime->tm_min;
+    climateData->time.seconds = localTime->tm_sec;
+    return climateData;
+}
+
+struct climateControl *acceptClimateData()
+{
     printf("\n\n READING DATA:");
 
     struct climateControl *climateData;
@@ -25,15 +36,9 @@ struct climateControl *acceptClimateData()
     printf("enter Light Mode o or 1: ");
     scanf("%d", &climateData->light);
 
-    climateData->date.day=localTime->tm_mday;
-    climateData->date.month=localTime->tm_mon+1;
-    climateData->date.year=localTime->tm_year+1900;
-    climateData->time.hour=localTime->tm_hour;
-    climateData->time.minute=localTime->tm_min;
-    climateData->time.seconds=localTime->tm_sec;
-
-    // climateData->fanstatus = FALSE;
-    return climateData;
+    climateData=applyDateTime(climateData);
+        // climateData->fanstatus = FALSE;
+        return climateData;
 }
 
 void displayClimate(struct climateControl *c)
@@ -54,6 +59,8 @@ void displayClimate(struct climateControl *c)
         // printf("temparture: %f",temp);
     }
 }
+
+
 
 // void controlFan(struct climateControl *ptr, bool status)
 // {
