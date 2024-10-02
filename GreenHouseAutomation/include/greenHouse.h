@@ -1,10 +1,12 @@
 #include<stdbool.h>
+#include"./currentTimeDate.h"
 struct climateControl{
+    struct Date date;
+    struct Time time;
     float temp;
     int humadity;
     int light;
-    // bool light;
-    bool fanstatus;
+   // bool fanstatus;
 };
 
 struct climateControl * acceptClimateData();

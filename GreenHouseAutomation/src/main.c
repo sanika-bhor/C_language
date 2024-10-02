@@ -1,33 +1,44 @@
 #include <stdio.h>
+#define MAX_READING 2
 #include "../include/greenHouse.h"
 int main()
 {
-    struct climateControl *cControl;
+    struct climateControl *cControl[2];
 
-    int choice;
-    // struct climateControl *cControl;
-    printf("\n 1.accept climate  data ");
-    printf("\n 2. display climate data ");
-    printf("\n 3. control your fan ");
-    printf("\n 4. exit ");
-    printf("\n\n choice any one: ");
-    scanf("%d", &choice);
-    do
+    for(int i=0;i<MAX_READING;i++)
     {
-        switch (choice)
-        {
-        case 1:
-            cControl = acceptClimateData();
-        case 2:
-            displayClimate(cControl);
-        case 3:
-            controlFan(cControl, true);
-        case 4:
-            return 0;
-        default:
-            printf("\n invalid choice");
-        }
-    } while (choice != 4);
+        cControl[i] = acceptClimateData();
+    }
+
+    for (int i = 0; i < MAX_READING; i++)
+    {
+        displayClimate(cControl[i]);
+    }
+
+    //int choice;
+    // struct climateControl *cControl;
+    // printf("\n 1.accept climate  data ");
+    // printf("\n 2. display climate data ");
+    // printf("\n 3. control your fan ");
+    // printf("\n 4. exit ");
+    // printf("\n\n choice any one: ");
+    // scanf("%d", &choice);
+    // do
+    // {
+    //     switch (choice)
+    //     {
+    //     case 1:
+    //         cControl = acceptClimateData();
+    //     case 2:
+    //         displayClimate(cControl);
+    //     case 3:
+    //         controlFan(cControl, true);
+    //     case 4:
+    //         return 0;
+    //     default:
+    //         printf("\n invalid choice");
+    //     }
+    // } while (choice != 4);
 
     // struct climateControl *cControl = acceptClimateData();
     // displayClimate(cControl);
