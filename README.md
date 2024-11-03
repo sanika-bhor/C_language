@@ -1,7 +1,5 @@
 # <p align="center">C Language #POP</p>
-
 -------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## Installation :-
 
 To get started with the "Procedure Oriented Programming" project, follow these steps:
